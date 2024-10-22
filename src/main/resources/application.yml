@@ -1,6 +1,8 @@
 spring:
+  profiles:
+    active: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${BigEvent.host}:${BigEvent.port}:/${BigEvent.db}?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://${BigEvent.host}:${BigEvent.port}/${BigEvent.db}?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
     username: ${BigEvent.username}
     password: ${BigEvent.password}
