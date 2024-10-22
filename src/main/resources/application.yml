@@ -1,3 +1,5 @@
+server:
+  port: 1723
 spring:
   profiles:
     active: dev
